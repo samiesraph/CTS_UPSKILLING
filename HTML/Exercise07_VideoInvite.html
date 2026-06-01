@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<script>
+
+function ready(){
+document.getElementById("status").innerHTML=
+"Video ready to play";
+}
+
+window.onbeforeunload=function(){
+return "Form not completed";
+}
+
+</script>
+
+</head>
+<body>
+
+<video width="400" controls oncanplay="ready()">
+<source src="promo.mp4" type="video/mp4">
+</video>
+
+<p id="status"></p>
+
+</body>
+</html>
+

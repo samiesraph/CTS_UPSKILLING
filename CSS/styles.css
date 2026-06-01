@@ -1,0 +1,192 @@
+/* Header styles */
+#exercise01 mainHeader,
+#exercise01 #mainHeader{
+    background-color:#007BFF;
+    color:white;
+    padding:20px;
+}
+
+/* Event card styles */
+#exercise01 .eventCard,
+#exercise01 .eventCard{
+    border:2px solid black;
+    padding:15px;
+    margin:15px;
+}
+
+/* Main CTA button */
+#exercise02 .cta-button,
+#exercise02 .cta-button{
+    background-color:#007BFF;
+    color:white;
+    padding:10px;
+}
+
+/* H2 Styling */
+#exercise01 h2{
+    color:darkgreen;
+}
+
+/* Group selector */
+#exercise01 h3,
+#exercise01 p{
+    font-family:Arial;
+}
+
+/* ===================== Exercise 03 ===================== */
+#exercise03 *{
+    margin:0;
+    padding:0;
+}
+
+#exercise03 h2{
+    color:blue;
+}
+
+#exercise03 #mainHeader{
+    background:orange;
+}
+
+#exercise03 .eventCard{
+    border:1px solid black;
+    padding:10px;
+}
+
+#exercise03 h3,
+#exercise03 p{
+    color:green;
+}
+
+/* ===================== Exercise 04 ===================== */
+#exercise04 body{
+    background:#f4f4f4 url("city.jpg");
+}
+
+#exercise04 h2{
+    background:linear-gradient(to right,
+    blue,green);
+    color:white;
+}
+
+#exercise04 .card{
+    background:rgba(255,0,0,0.2);
+}
+
+/* ===================== Exercise 05 ===================== */
+#exercise05 body{
+    font-family:Poppins;
+}
+
+#exercise05 h1{
+    font-size:32px;
+    font-weight:bold;
+}
+
+#exercise05 p{
+    text-align:justify;
+    text-transform:capitalize;
+    letter-spacing:2px;
+    line-height:30px;
+}
+
+/* ===================== Exercise 06 ===================== */
+#exercise06 a:link{
+    color:blue;
+}
+
+#exercise06 a:hover{
+    color:red;
+}
+
+#exercise06 a:active{
+    color:green;
+}
+
+#exercise06 a:visited{
+    color:purple;
+}
+
+#exercise06 nav ul{
+    list-style:none;
+}
+
+#exercise06 li{
+    padding:10px;
+    margin:5px;
+}
+
+/* ===================== Exercise 07 ===================== */
+#exercise07 table{
+    border-collapse:collapse;
+    width:70%;
+}
+
+#exercise07 th,
+#exercise07 td{
+    border:1px solid black;
+    padding:10px;
+    text-align:center;
+}
+
+#exercise07 tr:nth-child(even){
+    background:#eeeeee;
+}
+
+#exercise07 th{
+    background:skyblue;
+}
+
+/* ===================== Exercise 08 ===================== */
+#exercise08 .eventCard{
+    border:2px solid black;
+    padding:20px;
+    margin:20px;
+}
+
+#exercise08 input:focus{
+    outline:3px solid red;
+}
+
+#exercise08 .hidden{
+    visibility:hidden;
+}
+
+#exercise08 .none{
+    display:none;
+}
+
+/* ===================== Exercise 09 ===================== */
+#exercise09 .news{
+    column-count:2;
+    column-gap:30px;
+    column-rule:1px solid gray;
+}
+
+/* ===================== Exercise 10 ===================== */
+#exercise10 body{
+    width:90%;
+}
+
+#exercise10 nav{
+    display:flex;
+    gap:20px;
+}
+
+#exercise10 img{
+    width:300px;
+}
+
+@media(max-width:768px){
+    #exercise10 nav{
+        flex-direction:column;
+    }
+
+    #exercise10 img{
+        width:150px;
+    }
+
+    #exercise10 body{
+        font-size:14px;
+    }
+}
+
