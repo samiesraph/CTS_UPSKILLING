@@ -1,0 +1,233 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial,sans-serif;
+    background-color:#f4f4f4;
+    background-image:url("images/bg.jpg");
+    background-size:cover;
+    background-attachment:fixed;
+    color:#333333;
+}
+
+h2{
+    background:linear-gradient(to right,#0066cc,#66ccff);
+    color:white;
+    padding:10px;
+    margin-bottom:15px;
+}
+
+h3,p{
+    font-family:Arial,sans-serif;
+}
+
+#mainHeader{
+    background-color:#0066cc;
+    color:white;
+    padding:20px;
+    text-align:center;
+    font-size:24px;
+}
+
+#welcomeBanner{
+    background-color:rgba(0,0,255,0.8);
+    color:white;
+    padding:20px;
+    text-align:center;
+    font-size:24px;
+}
+
+.highlight{
+    background-color:yellow;
+    padding:5px;
+}
+
+nav{
+    background-color:#222;
+    padding:15px;
+}
+
+nav a{
+    color:white;
+    margin-right:20px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+a:link{
+    color:white;
+}
+
+a:visited{
+    color:lightgray;
+}
+
+a:hover{
+    color:yellow;
+}
+
+a:active{
+    color:red;
+}
+
+ul{
+    list-style-type:square;
+    list-style-position:inside;
+}
+
+li{
+    padding:5px;
+    margin:5px;
+}
+
+section{
+    padding:20px;
+}
+
+.eventCard{
+    background-color:rgba(255,255,255,0.9);
+    border:2px solid black;
+    padding:15px;
+    margin:15px 0;
+    outline:1px solid gray;
+    border-radius:8px;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+th,
+td{
+    border:1px solid black;
+    padding:10px;
+    text-align:center;
+}
+
+th{
+    background-color:#66ccff;
+}
+
+tr:nth-child(even){
+    background-color:#f2f2f2;
+}
+
+.gallery-img{
+    width:250px;
+    height:180px;
+    border:4px solid black;
+    transition:transform 0.3s;
+}
+
+.gallery-img:hover{
+    transform:scale(1.05);
+}
+
+form{
+    background-color:white;
+    padding:20px;
+    border-radius:10px;
+    width:60%;
+}
+
+label{
+    display:block;
+    margin-top:10px;
+}
+
+input,
+select,
+textarea{
+    width:100%;
+    padding:10px;
+    margin-top:5px;
+}
+
+input:focus,
+select:focus,
+textarea:focus{
+    outline:3px solid orange;
+}
+
+button{
+    margin-top:15px;
+    padding:10px 20px;
+    background-color:green;
+    color:white;
+    border:none;
+    cursor:pointer;
+}
+
+button:hover{
+    background-color:darkgreen;
+}
+
+.news{
+    column-count:2;
+    column-gap:30px;
+    column-rule:1px solid gray;
+    margin-top:15px;
+}
+
+.hiddenElement{
+    visibility:hidden;
+}
+
+.removedElement{
+    display:none;
+}
+
+footer{
+    background-color:#222;
+    color:white;
+    text-align:center;
+    padding:10px;
+    margin-top:20px;
+}
+
+.description{
+    text-align:justify;
+    text-transform:capitalize;
+    letter-spacing:2px;
+    line-height:1.8;
+    font-size:16px;
+    font-style:italic;
+    font-weight:normal;
+}
+
+@media screen and (max-width:768px){
+
+    nav a{
+        display:block;
+        margin-bottom:10px;
+    }
+
+    .gallery-img{
+        width:80vw;
+        height:auto;
+    }
+
+    form{
+        width:100%;
+    }
+
+    h2{
+        font-size:20px;
+    }
+
+    p{
+        font-size:14px;
+    }
+
+    .news{
+        column-count:1;
+    }
+
+    .eventCard{
+        width:100%;
+    }
+}

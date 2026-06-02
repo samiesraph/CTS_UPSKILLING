@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Local Community Event Portal</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Navigation -->
+<nav>
+<a href="#home">Home</a>
+<a href="#events">Events</a>
+<a href="#contact">Contact</a>
+<a href="help.html" target="_blank">Help</a>
+</nav>
+<!-- Main -->
+<main>
+<!-- Welcome Banner -->
+<section id="home">
+<div id="mainHeader">
+ Welcome to the Community Portal!
+<span style="color:red; font-weight:bold;">
+ Limited Time Registration Offer!
+</span>
+</div>
+<p class="highlight">
+ Stay updated with local events and activities.
+</p>
+</section>
+<!-- Events Section -->
+<section id="events">
+<h2>Community Event Gallery</h2>
+<table>
+<caption>Past Community Events</caption>
+<tr>
+<td>
+<img src="C:\Users\company\Desktop\LocalCommunityEventPortal - html,css,js\images\img_1.jpg" alt="Music Event"
+title="Music Event" class="gallery-img">
+<p>Music Festival</p>
+</td>
+<td>
+<img src="C:\Users\company\Desktop\LocalCommunityEventPortal - html,css,js\images\img_2.jpeg" alt="Food Event"
+title="Food Event" class="gallery-img">
+<p>Food Carnival</p>
+</td>
+<td>
+<img src="images/img_3.jpeg" alt="Sports Event"
+title="Sports Event" class="gallery-img">
+<p>Sports Day</p>
+</td>
+</tr>
+<tr>
+<td>
+    <img src="images/img_4.jpeg" alt="Art Event" title="Art
+Event" class="gallery-img">
+<p>Art Exhibition</p>
+</td>
+<td>
+<img src="images/img_5.jpeg" alt="Book Event"
+title="Book Event" class="gallery-img">
+<p>Book Fair</p>
+</td>
+<td>
+<img src="images/img_6.jpg" alt="Dance Event"
+title="Dance Event" class="gallery-img">
+<p>Dance Competition</p>
+</td>
+</tr>
+</table>
+<div class="eventCard">
+    <h3>Music Festival</h3>
+    <p>Enjoy live music performances from local artists.</p>
+</div>
+
+<div class="eventCard">
+    <h3>Sports Day</h3>
+    <p>Participate in exciting sports competitions.</p>
+</div>
+
+<div class="eventCard">
+    <h3>Art Exhibition</h3>
+    <p>Explore creative artwork from community members.</p>
+</div>
+
+<div id="eventContainer"></div>
+</section>
+<section>
+    <h2>Community News</h2>
+
+    <div class="news description">
+        The Local Community Event Portal helps residents stay informed about
+        upcoming activities, workshops, cultural programs and public events.
+        Citizens are encouraged to participate in music festivals, sports
+        competitions, educational seminars and volunteer initiatives.
+        Community leaders continue to organize programs that strengthen
+        neighborhood engagement and improve social interaction among residents.
+        Regular events provide opportunities for learning, entertainment and
+        collaboration while promoting local culture and talent.
+    </div>
+</section>
+<!-- Registration Form -->
+<section>
+<h2>Event Registration</h2>
+<form id="registrationForm">
+<label>Name:</label>
+<input type="text" id="name" placeholder="Enter your name"
+required autofocus>
+<label>Email:</label>
+<input type="email" id="email" placeholder="Enter your email"
+required>
+<label>Phone Number:</label>
+<input type="text" id="phone" placeholder="Enter phone number"
+onblur="validatePhone()">
+<label>Event Date:</label>
+<input type="date" required>
+<label>Select Event Type:</label>
+<select id="eventType" onchange="showFee()">
+<option value="">Select</option>
+<option value="Music">Music</option>
+<option value="Sports">Sports</option>
+<option value="Art">Art</option>
+</select>
+<p id="feeDisplay"></p>
+<label>Feedback Message:</label>
+<textarea id="feedback" placeholder="Enter feedback"></textarea>
+<p>Character Count: <span id="charCount">0</span></p>
+<button type="submit" id="submitBtn">Register</button>
+<output id="confirmationMessage"></output>
+</form>
+</section>
+<!-- Video Section -->
+<section>
+<h2>Event Promo Video</h2>
+<video id="promoVideo" width="500" controls
+oncanplay="videoReady()">
+<source src="videos/Local community event.mp4" type="video/mp4">
+</video>
+<p id="videoMessage"></p>
+</section>
+<!-- Geolocation -->
+<section>
+<h2>Find Nearby Events</h2>
+<button onclick="findLocation()">Find Nearby Events</button>
+<p id="locationResult"></p>
+</section>
+</main>
+<!-- Footer -->
+<footer id="contact">
+<p> Phone : 0123456789 </p>
+<p> Maill Id : qwerty@event.com</p>
+<p> &copy; 2026 Local Community Event Portal</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
